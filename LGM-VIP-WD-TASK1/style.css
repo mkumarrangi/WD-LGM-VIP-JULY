@@ -1,0 +1,178 @@
+html {
+    font-size: 16px;
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    display: 100%;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b90cf3, #ff00e1);
+
+}
+
+.ToDo-Box {
+    margin-top: 3%;
+    margin-left: 10%;
+    height: 70vh;
+    width: 70vw;
+    justify-content: center;
+    position: absolute;
+    background: linear-gradient(to right, #0c87f3, #0088ff);
+    border-radius: 3em;
+    display: flex;
+    flex-flow: column;
+    box-sizing: border-box;
+    padding: 2em 3em;
+}
+
+.tick-img {
+    height: 2em;
+    margin-left: .5em;
+}
+
+.top-Information {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-Left-Heading {
+    font-size: 30px;
+    font-family: 'Poiret One', cursive;    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.date-info {
+    font-size: 20px;
+    font-family: 'Poiret One', cursive;
+}
+
+.input-Form {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: space-between center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.input-Text {
+    outline: none;
+    border: solid .2px rgb(187, 187, 187);
+    height: 2.5em;
+    font-size: 20px;
+    color: rgb(35, 35, 35);
+    width: 80%;
+    padding: .5em .4em;
+}
+.add-btn{
+    width: 18%;
+    margin-left: 2%;
+    text-align: center;
+    font-size: 20px;
+    background-color: #e802f9;
+    font-family: 'Poiret One', cursive;
+    color: white;
+    border-radius: 8px;
+}
+.add-btn:hover {
+    transform: scale(1.1);
+    transition: .2s;
+    background-color: white;
+    color: #e802f9;
+}
+
+.all-tasks {
+    height: 16em;
+    width: 100%;
+    /* background-color: #6dd5fa; */
+    margin: 2em 0em;
+    display: flex;
+    overflow-y: scroll;
+    flex-flow: column;
+
+}
+
+.one {
+    position: relative;
+    box-sizing: border-box;
+    background-color: #ebe7e4;
+    font-family: 'Poiret One', cursive;    font-size: 18px;
+    font-weight: 500;
+    color: rgb(59, 59, 59);
+    /* padding: 0.8em 0.5em; */
+    padding: 0.8em 2.4em 0.8em .5em;
+    margin: .3em 0em;
+    border-radius: .5em;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.cross-img {
+    position: absolute;
+    top: 20%;
+    left: 90%;
+    z-index: 100;
+    height: 1.8em;
+}
+.cross-img:hover{
+    transform: scale(1.1);
+    transition: .2s;
+}
+.pending {
+    font-family: 'Poiret One', cursive;    font-size: 18px;
+    color: rgb(58, 58, 58);
+    font-weight: 500;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clear-button {
+    padding: 0.4em 1.4em;
+    font-size: 20px;
+    background-color: #e802f9;
+    color: white;
+    border-radius: 8px;
+}
+.clear-button:hover{
+    background-color: white;
+    color: #e802f9;
+}
+
+.completed-icon {
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    font-size: 30px;
+    color: #dadada;
+    position: absolute;
+    top: 40%;
+    left: 30%
+}
+
+.hide {
+    display: none;
+}
+.credit{
+    margin-left: 82vw;
+    margin-top: 75vh;
+    position: absolute;
+}
+.task{
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-family: 'Poiret One', cursive;
+}
